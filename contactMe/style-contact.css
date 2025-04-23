@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #0d0b1d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Xếp dọc các phần tử con */
+  min-height: 100vh; /* Chiều cao tối thiểu bằng màn hình */
+}
+.contact-container {
+  background: #fff;
+  padding: 2rem 2rem 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  margin: 2rem auto 0; /* Căn giữa và thêm margin-top */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container p {
+  color: #333;
+  margin-bottom: 0.2rem; /* Giảm khoảng cách dưới đoạn văn */
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: teal;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem; /* Kích thước chữ linh hoạt */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Đảm bảo không tràn */
+  padding: 0.75rem; /* Padding linh hoạt */
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Chỉ cho phép thay đổi chiều cao */
+  min-height: 8rem; /* Chiều cao tối thiểu linh hoạt */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.info {
+  text-align: left;
+  margin-top: 0.2rem; /* Giảm khoảng cách trên danh sách thông tin */
+  color: #555;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+footer {
+  margin-top: auto; /* Đẩy footer xuống đáy */
+  text-align: center;
+  padding: 1rem;
+  background: #1f1a3b;
+}
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+  .contact-container {
+    width: 95%; /* Linh hoạt hơn trên màn hình nhỏ */
+    padding: 1.5rem 1.5rem 3rem 1.5rem; /* Giảm padding */
+    margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.875rem;
+  }
+
+  .contact-form button {
+    font-size: 0.875rem;
+  }
+}

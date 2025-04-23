@@ -1,0 +1,78 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #0d0b1d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f1a3b;
+}
+header h1 {
+  margin: 0;
+  color: #c084fc;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+/* thiết kế nút download */
+.download-btn {
+  display: block;
+  margin: 1rem auto;
+  background: #a855f7;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+}
+.container {
+  background: white;
+  color: #000;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.title {
+  font-family: "Playfair Display", serif;
+  color: teal;
+}
+h2 {
+  color: teal;
+  border-bottom: 1px solid teal;
+  padding-bottom: 0.3rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+table,
+th,
+td {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: justify;
+}
+th {
+  text-align: center;
+}
+footer {
+  font-size: 0.9rem;
+  color: #bbb;
+}
