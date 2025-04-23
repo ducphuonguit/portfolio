@@ -33,9 +33,9 @@ body {
   line-height: 1.5em;
 }
 
-h2 {
+.text {
   text-align: center;
-  color: teal;
+  color: #c586c0;
   margin-bottom: 1.5rem;
   font-size: 1.5rem; /* Kích thước chữ linh hoạt */
 }
