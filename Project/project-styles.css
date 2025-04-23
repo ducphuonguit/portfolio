@@ -1,111 +1,100 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* 
 
-
-
-header{
-    text-align: center;
-    line-height: 1.5;
-    padding: 50px;
-    background: linear-gradient(135deg, #1e013d, #250385);
-    color: white;
-}
-
-body {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #0d1224;
-    color: #d3d8e8;
-    line-height: 1.5;
-}
+header {
+  text-align: center;
+  line-height: 1.5;
+  padding: 50px;
+  background: linear-gradient(135deg, #1e013d, #250385);
+  color: white;
+} */
 
 section {
-    display: block;
+  display: block;
 }
 
-h2{
-    display: flex;
-    align-items: center;
+h2 {
+  display: flex;
+  align-items: center;
 }
 
 
-.h2-text{
-    position: relative;
-    background: #0d1224;
-    /* border: 2px solid;
+.h2-text {
+  position: relative;
+  background: #0d1224;
+  /* border: 2px solid;
     border-image: linear-gradient(to right, #7b08ad, rgb(63, 15, 145), #341560) 1; */
-    border-radius: 15px;
-    display: inline-block;
-    padding: 12px;
-    color: white; 
-    /* z-index: 1; */
-    margin-bottom: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  /* z-index: 1; */
+  margin-bottom: 10px;
 }
 
 .h2-text::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    
-    border-radius: 15px; /* Bo tròn góc */
-    background: linear-gradient(to right, #7b08ad, rgb(63, 15, 145), #341560);
-    z-index: -2;
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+
+  border-radius: 15px;
+  /* Bo tròn góc */
+  background: linear-gradient(to right, #7b08ad, rgb(63, 15, 145), #341560);
+  z-index: -2;
 }
 
-.h2-line{
-    flex: 1;
-    height: 3px;
-    background-image: linear-gradient(to right, #341560, #3f0f91, #7b08ad) ;
-    margin-bottom: 10px;
+.h2-line {
+  flex: 1;
+  height: 3px;
+  background-image: linear-gradient(to right, #341560, #3f0f91, #7b08ad);
+  margin-bottom: 10px;
 }
 
-.container {
-    max-width: 48rem;
-    margin: 0 auto;
-    padding-top: 6rem;
-}
 
 .card-container {
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    gap: 1.5rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 1.5rem;
 }
 
 .sticky-cards {
-    position: sticky;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    /* border-radius: 0.25rem; */
-    /* border: 5px solid #fff; */
-    
-    z-index: 10;
+  position: sticky;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-radius: 0.25rem; */
+  /* border: 5px solid #fff; */
+
+  z-index: 10;
 }
 
 .card-content {
-    border: 2px solid #1b2c68a0;
-    border-radius: 0.5rem;
-    background: #020719;
-    /* padding: 1rem; */
-    box-shadow: 4px 4px 7px 4px rgba(0,0,0,0.4);;
-    transition: all 0.5s ease;
+  border: 2px solid #1b2c68a0;
+  border-radius: 0.5rem;
+  background: #020719;
+  /* padding: 1rem; */
+  box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.4);
+  ;
+  transition: all 0.5s ease;
 }
 
 .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: linear-gradient(to right, #0d1224, darkblue, #180962);
-    padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(to right, #0d1224, darkblue, #180962);
+  padding: 0.75rem 1rem;
 }
 
 .card-header::before,
@@ -120,130 +109,133 @@ h2{
 } */
 
 .card-header::before {
-    left: 0;
+  left: 0;
 }
 
 .card-header::after {
-    right: 0;
+  right: 0;
 }
 
 
 .card-title {
-    text-align: center;
-    color: #c3f1e4;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 0.75rem;
+  text-align: center;
+  color: #c3f1e4;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 0.75rem;
 
 }
 
 .card-icons {
-    display: flex;
-    gap: 0.25rem;
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+  display: flex;
+  gap: 0.25rem;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .card-icons div {
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
 }
 
 .card-icons .red {
-    background-color: #ff1515;
+  background-color: #ff1515;
 }
 
 .card-icons .orange {
-    background-color: #ffae23;
+  background-color: #ffae23;
 }
 
 .card-icons .green {
-    background-color: #00cc47;
+  background-color: #00cc47;
 }
 
-.text-hotpink{
-    color: hotpink;
+.text-hotpink {
+  color: hotpink;
 }
 
-.text-white{
-    color: white;
+.text-white {
+  color: white;
 }
 
-.text-gray{
-    color: darkgray;
+.text-gray {
+  color: darkgray;
 }
 
-.text-gold{
-    color: gold;
+.text-gold {
+  color: gold;
 }
 
-.text-dark-orange{
-    color: darkorange;
+.text-dark-orange {
+  color: darkorange;
 }
 
-.text-aqua{
-    color: aqua;
+.text-aqua {
+  color: aqua;
 }
 
-.key-name{
-    margin-left: 4mm;
-    margin-right: 2mm;
+.key-name {
+  margin-left: 4mm;
+  margin-right: 2mm;
 }
 
 .card-body {
-    border-top: 2px solid #312e81;
-    padding: 1.5rem;
-    overflow: hidden;
+  border-top: 2px solid #312e81;
+  padding: 1.5rem;
+  overflow: hidden;
 }
 
 .card-code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.75rem;
-    text-align: justify;
-    line-height: 1rem;
-    color: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  text-align: justify;
+  line-height: 1rem;
+  color: #fff;
 }
 
 .card-code .blink {
-    animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 #sticky-card-0 {
-    top: 1rem;
+  top: 1rem;
 }
 
 #sticky-card-1 {
-    top: 7rem;
+  top: 7rem;
 }
 
 #sticky-card-2 {
-    top: 10rem;
+  top: 10rem;
 }
 
 #sticky-card-3 {
-    top: 13rem;
+  top: 13rem;
 }
 
 #sticky-card-4 {
-    top: 16rem;
+  top: 16rem;
 }
 
 #backToTopBtn {
-  opacity: 0; /* Ban đầu ẩn và trong suốt */
-  visibility: hidden; 
+  opacity: 0;
+  /* Ban đầu ẩn và trong suốt */
+  visibility: hidden;
   width: 50px;
   height: 50px;
   font-size: 22px;
@@ -260,8 +252,10 @@ h2{
   z-index: 99;
   border: none;
   outline: none;
-  background: linear-gradient(135deg, #2020a4 0%, #521CCB 70%, #902DD7 100%); /* Màu nền */
-  color: white; /* Màu chữ */
+  background: linear-gradient(135deg, #2020a4 0%, #521CCB 70%, #902DD7 100%);
+  /* Màu nền */
+  color: white;
+  /* Màu chữ */
   cursor: pointer;
   box-sizing: border-box;
 
@@ -270,8 +264,10 @@ h2{
 }
 
 #backToTopBtn.show {
-  opacity: 1; /* Hiện rõ */
-  visibility: visible; /* Hiển thị và tương tác được */
+  opacity: 1;
+  /* Hiện rõ */
+  visibility: visible;
+  /* Hiển thị và tương tác được */
 }
 
 #backToTopBtn:hover {
@@ -284,19 +280,21 @@ h2{
   flex-wrap: wrap;
 }
 
-.gallery-box{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #1b2c68a0;
-    border-radius: 0.5rem;
-    background: #020719;
-    flex: 1 0 32%;
-    max-width: 32%;
-    box-shadow: 4px 4px 7px 4px rgba(0,0,0,0.4);;
-    transition: all 0.5s ease;
+.gallery-box {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #1b2c68a0;
+  border-radius: 0.5rem;
+  background: #020719;
+  flex: 1 0 32%;
+  max-width: 32%;
+  box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.4);
+  ;
+  transition: all 0.5s ease;
 
 }
-.gallery-box-head{
+
+.gallery-box-head {
   position: relative;
   width: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -315,7 +313,7 @@ h2{
   overflow: hidden;
 }
 
-.gallery-item{
+.gallery-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,8 +330,8 @@ h2{
   overflow: hidden;
   object-fit: cover;
   border-radius: 10px;
-  border: 1px solid #1b2c68a0; 
-  box-shadow: 4px 4px 7px 4px rgba(0,0,0,0.4);
+  border: 1px solid #1b2c68a0;
+  box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -350,7 +348,7 @@ h2{
   right: 0;
   bottom: 0;
   border: 3px solid #c00773;
-  border-radius: 10px; 
+  border-radius: 10px;
   opacity: 0;
   transform: scale(1);
   transition: transform 0.3s ease-in;
@@ -359,14 +357,16 @@ h2{
 }
 
 .gallery-item:hover::before {
-  opacity: 1; /* Hiển thị viền khi hover */
+  opacity: 1;
+  /* Hiển thị viền khi hover */
   transform: scale(1.06);
 }
 
 
 @media (max-width: 768px) {
   .gallery-box {
-    flex-basis: calc(50% - 5px); /* Hai dự án trên một hàng */
+    flex-basis: calc(50% - 5px);
+    /* Hai dự án trên một hàng */
     max-width: calc(50% - 5px);
     margin-bottom: 10px;
   }
@@ -374,67 +374,81 @@ h2{
 
 @media (max-width: 480px) {
   .gallery-box {
-    flex-basis: 100%; /* Mỗi dự án trên một hàng */
+    flex-basis: 100%;
+    /* Mỗi dự án trên một hàng */
     max-width: 100%;
     margin-bottom: 10px;
   }
 }
 
-.website-box{
+.website-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Ban đầu ẩn đi */
-  transform: translateY(50px); /* Dịch chuyển xuống dưới 50px */
-  transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* Hiệu ứng mờ dần và dịch chuyển */
+  opacity: 0;
+  /* Ban đầu ẩn đi */
+  transform: translateY(50px);
+  /* Dịch chuyển xuống dưới 50px */
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  /* Hiệu ứng mờ dần và dịch chuyển */
 }
 
-.website-item{
-    position: relative;
-    width: 40%;
-    margin: 0 auto;
-    flex-basis: 70%;
+.website-item {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  flex-basis: 70%;
 }
 
 .website-box.visible {
-  opacity: 1; /* Hiển thị */
-  transform: translateY(0); /* Trở về vị trí ban đầu */
+  opacity: 1;
+  /* Hiển thị */
+  transform: translateY(0);
+  /* Trở về vị trí ban đầu */
 }
 
-.website-item img{
+.website-item img {
   display: block;
   border: 2px solid #2353ff;
   padding: 4px;
-  max-width: 100%; 
-  height: auto; /* Duy trì tỷ lệ khung hình */
-  margin: 0 auto; 
-  box-shadow: 4px 4px 7px 4px rgba(0,0,0,0.4);
+  max-width: 100%;
+  height: auto;
+  /* Duy trì tỷ lệ khung hình */
+  margin: 0 auto;
+  box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.4);
 }
 
-.website-item .img-overlay{
-  position: absolute; /* Định vị tuyệt đối so với website-item */
+.website-item .img-overlay {
+  position: absolute;
+  /* Định vị tuyệt đối so với website-item */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Màu nền với opacity 90% */
-  color: white; /* Màu chữ trắng */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Màu nền với opacity 90% */
+  color: white;
+  /* Màu chữ trắng */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  opacity: 0; /* Ban đầu ẩn đi */
-  transition: opacity 0.3s ease-in-out; /* Hiệu ứng mờ dần */
+  opacity: 0;
+  /* Ban đầu ẩn đi */
+  transition: opacity 0.3s ease-in-out;
+  /* Hiệu ứng mờ dần */
 }
 
 .website-item:hover .img-overlay {
-  opacity: 1; /* Hiện lớp phủ */
+  opacity: 1;
+  /* Hiện lớp phủ */
 }
 
-.img-overlay a{
-   color: MediumSpringGreen;
+.img-overlay a {
+  color: MediumSpringGreen;
 }
+
 .img-overlay h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -445,34 +459,34 @@ h2{
   margin: 0;
 }
 
-.form-games-box{
+.form-games-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.form-games-item{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-basis: 100%;
-    position: relative;
-    max-width: 87%;
-    height: 35rem;
-    border:  solid #2353ff;
-    box-shadow: 4px 4px 7px 4px rgba(0,0,0,0.4);
-    overflow: hidden;
-    margin: 5px auto;
-    object-fit: cover;
-    transition: box-shadow 0.3s ease-in-out;
+.form-games-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  max-width: 87%;
+  height: 35rem;
+  border: solid #2353ff;
+  box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 5px auto;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .form-games-item:hover {
-  box-shadow: 0px 6px 13px 9px rgba(130,17,114,0.96);
+  box-shadow: 0px 6px 13px 9px rgba(130, 17, 114, 0.96);
 }
 
-.form-games-item img{
+.form-games-item img {
   position: relative;
   width: 100%;
   height: 80%;
@@ -481,37 +495,41 @@ h2{
 }
 
 .form-games-item:hover img {
-      transform: translateY(-3px) scale(1.02);
-    }
+  transform: translateY(-3px) scale(1.02);
+}
 
-.form-games-item .ptext{
+.form-games-item .ptext {
   width: 100%;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.ptext a{
+.ptext a {
   color: #ccc;
 }
 
-.ptsext a:visited{
+.ptsext a:visited {
   color: #7b08ad;
 }
 
 @media (max-width: 480px) {
   .website-item {
-    flex-basis: 100%; /* Mỗi dự án trên một hàng */
+    flex-basis: 100%;
+    /* Mỗi dự án trên một hàng */
     max-width: 100%;
     margin-bottom: 10px;
   }
-  .form-games-box{
+
+  .form-games-box {
     flex-direction: column;
   }
+
   .form-games-item {
-    flex-basis: 100%; /* Mỗi dự án trên một hàng */
+    flex-basis: 100%;
+    /* Mỗi dự án trên một hàng */
     max-width: 100%;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
   }
 }
 
@@ -532,10 +550,13 @@ h2{
 }
 
 .form-group {
-  flex-grow: 1; /* Chia đều không gian còn lại */
-  flex-basis: 0; /* Kích thước cơ sở ban đầu là 0 */
+  flex-grow: 1;
+  /* Chia đều không gian còn lại */
+  flex-basis: 0;
+  /* Kích thước cơ sở ban đầu là 0 */
   display: flex;
-  flex-direction: column; /* Đặt label lên trên input/textarea */
+  flex-direction: column;
+  /* Đặt label lên trên input/textarea */
 }
 
 .form-group label {
@@ -544,9 +565,10 @@ h2{
 }
 
 .form-group input[type="text"],
-.form-group input[type="email"]{
+.form-group input[type="email"] {
   display: flex;
-  align-items: center; /* Canh giữa theo chiều dọc */
+  align-items: center;
+  /* Canh giữa theo chiều dọc */
   padding: 12px;
   border: 2px solid;
   border-image: linear-gradient(to right, #007bff, #6610f2) 1;
@@ -554,10 +576,12 @@ h2{
   color: white;
 }
 
-.phone-input-group { /* Áp dụng flex cho cả phone-input-group */
+.phone-input-group {
+  /* Áp dụng flex cho cả phone-input-group */
   display: flex;
   position: relative;
-  align-items: center; /* Canh giữa theo chiều dọc */
+  align-items: center;
+  /* Canh giữa theo chiều dọc */
   border: 2px solid;
   border-image: linear-gradient(to right, #007bff, #6610f2) 1;
   background-color: transparent;
@@ -585,34 +609,43 @@ h2{
 .dropdown-button {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Căn giữa nội dung */
-  padding: 5px 5px 5px 5px; /* Padding nhỏ gọn */
+  justify-content: space-between;
+  /* Căn giữa nội dung */
+  padding: 5px 5px 5px 5px;
+  /* Padding nhỏ gọn */
   background-color: transparent;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 50px; /* Chiều rộng cố định cho nút */
-  height: 30px; /* Chiều cao cố định cho nút */
+  width: 50px;
+  /* Chiều rộng cố định cho nút */
+  height: 30px;
+  /* Chiều cao cố định cho nút */
   margin-left: 10px;
 }
 
 /* Flag icon */
 .flag-icon {
-  width: 24px; 
-  height: 18px; /* Kích thước cờ */
-  background-size: cover; /* Đảm bảo cờ hiển thị đầy đủ */
+  width: 24px;
+  height: 18px;
+  /* Kích thước cờ */
+  background-size: cover;
+  /* Đảm bảo cờ hiển thị đầy đủ */
 }
 
 /* Arrow icon  */
 .arrow-icon {
-  font-size: 16px; /* Kích thước */
+  font-size: 16px;
+  /* Kích thước */
   color: #ccc;
-  transition: transform 0.3s ease; /* Thời gian hiệu ứng xoay */
+  transition: transform 0.3s ease;
+  /* Thời gian hiệu ứng xoay */
 }
 
 /* Khi dropdown được mở, đảo ngược icon */
 .arrow-icon.open {
-  transform: rotate(180deg); /* Xoay */
+  transform: rotate(180deg);
+  /* Xoay */
 }
 
 /* Dropdown content */
@@ -626,8 +659,10 @@ h2{
   border-radius: 5px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  min-width: 225px; /* Tăng chiều rộng để chứa ô tìm kiếm */
-  max-height: 300px; /* Tăng chiều cao để chứa nhiều mục hơn */
+  min-width: 225px;
+  /* Tăng chiều rộng để chứa ô tìm kiếm */
+  max-height: 300px;
+  /* Tăng chiều cao để chứa nhiều mục hơn */
   overflow-y: auto;
 }
 
@@ -637,21 +672,25 @@ h2{
   border-bottom: 1px solid #ccc;
 }
 
-.search-box input[type="text"]{
-  width: 95%; /* Chiếm toàn bộ chiều rộng */
+.search-box input[type="text"] {
+  width: 95%;
+  /* Chiếm toàn bộ chiều rộng */
   padding: 5px;
   border: none;
   border-radius: 5px;
-  outline: none; /* Loại bỏ viền khi focus */
+  outline: none;
+  /* Loại bỏ viền khi focus */
 }
 
 /* Dropdown items */
 .dropdown-item {
   display: flex;
-  align-items: center; /* Căn giữa theo chiều dọc */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
   padding: 10px;
   cursor: pointer;
-  gap: 10px; /* Khoảng cách giữa cờ và văn bản */
+  gap: 10px;
+  /* Khoảng cách giữa cờ và văn bản */
 }
 
 .dropdown-item:hover {
@@ -666,8 +705,10 @@ h2{
 .phone-input-group input[type="tel"] {
   border: 1px solid transparent;
   padding: 12px;
-  flex-grow: 1; /* Cho phép ô nhập số điện thoại lớn lên */
-  margin-left: 1px; /* Tạo khoảng cách với nút xổ xuống */
+  flex-grow: 1;
+  /* Cho phép ô nhập số điện thoại lớn lên */
+  margin-left: 1px;
+  /* Tạo khoảng cách với nút xổ xuống */
   background-color: transparent;
 }
 
@@ -737,19 +778,20 @@ h2{
   }
 
   .phone-input-group .country-code-select {
-    
+
     margin-bottom: 5px;
   }
 
   .phone-input-group input[type="tel"] {
-    margin-left: 0; /* Loại bỏ margin khi chuyển sang cột */
+    margin-left: 0;
+    /* Loại bỏ margin khi chuyển sang cột */
     width: 100%;
-    
+
   }
 
 }
 
-.custom-checkbox-group  {
+.custom-checkbox-group {
   padding: 0px;
   background-color: transparent;
   border: none;
@@ -757,14 +799,16 @@ h2{
 }
 
 .custom-checkbox-group .clabel {
-    display: block; /* Để label chiếm toàn bộ chiều rộng nếu cần */
-    margin-bottom: 5px;
+  display: block;
+  /* Để label chiếm toàn bộ chiều rộng nếu cần */
+  margin-bottom: 5px;
 }
 
 .options-container {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap; /* Cho phép các nút xuống hàng nếu không đủ chỗ */
+  flex-wrap: wrap;
+  /* Cho phép các nút xuống hàng nếu không đủ chỗ */
   margin-bottom: 10px;
 }
 
@@ -785,8 +829,10 @@ h2{
 }
 
 .options-container button:focus {
-  outline: none; /* Loại bỏ viền focus mặc định của trình duyệt */
-  border-color: #0056b3; /* Thêm viền focus tùy chỉnh */
+  outline: none;
+  /* Loại bỏ viền focus mặc định của trình duyệt */
+  border-color: #0056b3;
+  /* Thêm viền focus tùy chỉnh */
 }
 
 
