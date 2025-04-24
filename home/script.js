@@ -12,18 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
 
-        if (targetElement) {
-            // Tính toán vị trí cuộn đến, có tính đến chiều cao của navbar cố định
-            const navbarHeight = document.querySelector('.navbar').offsetHeight; // Lấy chiều cao navbar động
-            const elementPosition = targetElement.getBoundingClientRect().top; // Vị trí phần tử so với viewport
-            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight; // Vị trí tuyệt đối đã điều chỉnh
-
-            // Thực hiện cuộn mượt
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth' // Kích hoạt hiệu ứng cuộn mượt
-            });
-        }
     });
 });
 
