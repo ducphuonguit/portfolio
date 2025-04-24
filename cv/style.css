@@ -2,6 +2,9 @@
   text-align: center;
   padding: 1rem;
   background: #1f1a3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .download-container h1 {

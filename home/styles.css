@@ -7,7 +7,6 @@
 /* --- Hero Section --- */
 #home {
     /* Để nội dung không bị che bởi navbar */
-    min-height: 100vh;
     display: flex;
     align-items: center;
     background: linear-gradient(to bottom right, #1a1a2e, #2a0b4a);
@@ -203,9 +202,9 @@
     }
 
 
-    section {
+    /* section {
         padding: 60px 0;
-    }
+    } */
 
     .footer-content {
         flex-direction: column;
