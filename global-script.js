@@ -1,11 +1,8 @@
 const body = document.querySelector("body");
 if (body) {
-
   const path = window.location.pathname;
   const segments = path.split('/').filter(Boolean);
   const currentRoute = segments[0] || '';
-
-  console.log('Current route:', currentRoute);
 
   const footerHTML = `
     <footer>
