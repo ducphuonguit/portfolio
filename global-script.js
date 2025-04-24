@@ -1,23 +1,3 @@
-const menuBtn = document.getElementsByClassName("toggle-nav-btn")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
-if (menuBtn) {
-  if (menuBtn.classList.contains("showMenu")) {
-    menuBtn.classList.remove("showMenu")
-    navbarLinks.classList.add("hide")
-  }
-
-  menuBtn.addEventListener("click", () => {
-    if (menuBtn.classList.contains("showMenu")) {
-      menuBtn.classList.remove("showMenu")
-      navbarLinks.classList.add("hide")
-    } else {
-      menuBtn.classList.add("showMenu")
-      navbarLinks.classList.remove("hide")
-    }
-  });
-}
-
 const body = document.querySelector("body");
 if (body) {
 
@@ -69,4 +49,24 @@ if (body) {
     </div>
   </header>`
   body.insertAdjacentHTML('afterbegin', headerHTML);
+}
+
+const menuBtn = document.getElementsByClassName("toggle-nav-btn")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+if (menuBtn) {
+  if (menuBtn.classList.contains("showMenu")) {
+    menuBtn.classList.remove("showMenu")
+    navbarLinks.classList.add("hide")
+  }
+
+  menuBtn.addEventListener("click", () => {
+    if (menuBtn.classList.contains("showMenu")) {
+      menuBtn.classList.remove("showMenu")
+      navbarLinks.classList.add("hide")
+    } else {
+      menuBtn.classList.add("showMenu")
+      navbarLinks.classList.remove("hide")
+    }
+  });
 }
