@@ -153,11 +153,11 @@ h2 {
 
 .navbar nav li {
     padding: 0.2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.navbar nav li.active a{
-    color: var(--purple-color)!important;
+.navbar nav li.active a {
+    color: var(--purple-color) !important;
 }
 
 .navbar .btns-container {
