@@ -27,10 +27,10 @@ if (body) {
 
   body.insertAdjacentHTML('beforeend', footerHTML);
 
-  const headerHTML = `  <header class="navbar">
+  const headerHTML = `<header class="navbar">
     <div class="container">
       <div class="btns-container">
-        <a href="" class="logo highlight-purple">PT</a>
+        <a href="../home/index.html" class="logo highlight-purple">PT</a>
         <div class="toggle-nav-btn">
           <div class="bar1"></div>
           <div class="bar2"></div>
