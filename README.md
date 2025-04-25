@@ -1,47 +1,30 @@
-Personal Portfolio Website
-Welcome to my personal portfolio website! This site showcases my work, skills, and contact information in a clean and modern design.
+# Personal Portfolio Website
 
-🔗 Live Site: https://best-porfolio.netlify.app/
+**Live URL:** [https://best-porfolio.netlify.app/](https://best-porfolio.netlify.app/)
 
-📌 Features
-Responsive design for all screen sizes
+## 📄 Description
 
-Smooth scrolling and modern UI
+This is a simple and clean personal portfolio website. It highlights key information about me, showcases my projects, and provides a way to get in touch.
 
-Projects section with links and descriptions
+## ✨ Features
 
-About Me and Skills overview
+- Responsive design that works across devices  
+- Sections for About Me, Projects, Skills, and Contact  
+- Smooth navigation and modern UI  
+- Hosted on Netlify
 
-Contact form for direct communication
+## 🛠️ Technologies Used
 
-Deployed using Netlify
+- HTML  
+- CSS  
+- JavaScript  
 
-🛠️ Built With
-HTML5
+## 🚀 How to Use Locally
 
-CSS3
+1. Clone the repository:
 
-JavaScript
-
-(Optional) React / Bootstrap / Tailwind (depending on your stack – let me know if you used one!)
-
-🚀 Getting Started
-To run the project locally:
-
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/portfolio-site.git
-cd portfolio-site
-Open index.html in your browser or use a live server extension in VSCode.
-
-📄 License
-This project is open-source and available under the MIT License.
-
-🙌 Acknowledgments
-Inspired by modern web design portfolios
-
-Icons and fonts from Font Awesome and Google Fonts
-
+   ```bash
+   git clone https://github.com/your-username/portfolio-site.git
+   cd portfolio-site
+2. Open index.html in your browser
+Or use a live server if you're using a code editor like VSCode
