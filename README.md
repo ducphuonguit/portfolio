@@ -9,7 +9,7 @@ This is a simple and clean personal portfolio website. It highlights key informa
 ## ✨ Features
 
 - Responsive design that works across devices  
-- Sections for About Me, Projects, Skills, and Contact  
+- Sections for About Me, Projects, Skills, Resume, and Contact  
 - Smooth navigation and modern UI  
 - Hosted on Netlify
 
@@ -24,7 +24,7 @@ This is a simple and clean personal portfolio website. It highlights key informa
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/portfolio-site.git
-   cd portfolio-site
+   git clone https://github.com/ducphuonguit/portfolio
+   cd portfolio
 2. Open index.html in your browser
 Or use a live server if you're using a code editor like VSCode
