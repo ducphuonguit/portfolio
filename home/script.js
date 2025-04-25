@@ -29,36 +29,37 @@ let pauseAfterType = 1500; // Thời gian dừng sau khi gõ xong (milliseconds)
 let pauseAfterDelete = 500; // Thời gian dừng sau khi xóa xong (milliseconds) - có thể điều chỉnh
 
 function typeWriter() {
-    const currentText = subtitleElement.textContent; // Lấy nội dung hiện tại của phần tử
+    let currentText = subtitleElement.textContent;
 
     if (isDeleting) {
-        // Nếu đang xóa, cắt bỏ ký tự cuối cùng
-        subtitleElement.textContent = currentText.substring(0, currentText.length - 1);
-        charIndex--; // Giảm index
+        // Xoá ký tự cuối cùng
+        currentText = currentText.replace(/\u00A0/, ""); // Loại bỏ &nbsp; nếu có
+        const newText = currentText.substring(0, currentText.length - 1);
+        subtitleElement.textContent = newText === "" ? "\u00A0" : newText;
+        charIndex--;
     } else {
         // Nếu đang gõ, thêm ký tự tiếp theo
-        subtitleElement.textContent += textToType.charAt(charIndex);
-        charIndex++; // Tăng index
+        if (subtitleElement.textContent === "\u00A0") {
+            subtitleElement.textContent = textToType.charAt(charIndex);
+        } else {
+            subtitleElement.textContent += textToType.charAt(charIndex);
+        }
+        charIndex++;
     }
 
-    // Xác định tốc độ cho bước tiếp theo dựa trên trạng thái (gõ hay xóa)
     let speed = isDeleting ? deletingSpeed : typingSpeed;
 
-    // Kiểm tra xem đã hoàn thành một giai đoạn (gõ xong hoặc xóa xong) chưa
     if (!isDeleting && charIndex === textToType.length) {
-        // Đã gõ xong toàn bộ chữ: thiết lập thời gian dừng và chuyển trạng thái sang xóa
         speed = pauseAfterType;
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
-        // Đã xóa xong toàn bộ chữ: thiết lập thời gian dừng và chuyển trạng thái sang gõ
         speed = pauseAfterDelete;
         isDeleting = false;
+        subtitleElement.textContent = "\u00A0"; // Giữ không gian khi rỗng
     }
 
-    // Gọi lại hàm typeWriter sau khoảng thời gian đã xác định
     setTimeout(typeWriter, speed);
 }
-
 // Xóa nội dung ban đầu của phần tử subtitle và bắt đầu hiệu ứng gõ
 // Điều này đảm bảo hiệu ứng bắt đầu từ trạng thái trống
 subtitleElement.textContent = '';
