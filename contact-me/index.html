@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Me</title>
   <link rel="stylesheet" href="style-contact.css" />
+  <script src="script.js" defer></script>
   <script src="../global-script.js" defer></script>
   <link rel="stylesheet" href="../global-style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -47,13 +48,15 @@
         </ul>
       </div>
       <p>Or leave a message and I will respond to you as soon as possible:</p>
-      <form class="contact-form">
+      <form class="contact-form" id="contact-form">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="10" placeholder="Message content..." required></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>
+    <div id="snackbar">Submit successfully!</div>
+
   </main>
 </body>
 
