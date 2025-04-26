@@ -71,14 +71,12 @@ setTimeout(typeWriter, pauseAfterDelete);
 // Highlight liên kết trong navbar tương ứng với phần (section) mà người dùng đang xem
 const sections = document.querySelectorAll('main section[id]'); // Lấy tất cả các section có ID trong thẻ main
 const navLinks = document.querySelectorAll('.navbar nav ul li a'); // Lấy tất cả các liên kết trong navbar
-const navbarHeight = document.querySelector('.navbar').offsetHeight; // Lấy chiều cao navbar (có thể thay đổi khi responsive)
 
 // Cấu hình Intersection Observer
 // Observer sẽ kích hoạt khi ranh giới trên của một section đi qua một đường ảo
 // Đường ảo này được đặt ngay dưới navbar (tính bằng -navbarHeight từ đỉnh viewport)
 const observerOptions = {
     root: null, // Quan sát tương đối với viewport (khung nhìn)
-    rootMargin: `-${navbarHeight}px 0px 0px 0px`, // Điều chỉnh vùng quan sát: bớt đi chiều cao navbar từ đỉnh
     threshold: 0 // Kích hoạt ngay khi bất kỳ phần nào của section đi vào/ra vùng quan sát đã điều chỉnh
 };
 
@@ -106,7 +104,7 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
         // và nếu cuộn trang đang ở gần đỉnh
         const anyLinkActive = Array.from(navLinks).some(link => link.classList.contains('active'));
         const scrollY = window.pageYOffset;
-        const firstSectionTop = sections[0] ? sections[0].offsetTop - navbarHeight : 0; // Vị trí đỉnh section đầu tiên sau khi trừ navbar
+        const firstSectionTop = sections[0] ? sections[0].offsetTop : 0; // Vị trí đỉnh section đầu tiên sau khi trừ navbar
 
         if (!anyLinkActive && scrollY <= firstSectionTop + 50) { // Nếu không có link nào active VÀ đang cuộn gần đỉnh (thêm 50px dung sai)
             const homeLink = document.querySelector('.navbar nav ul li a[href="#home"]');
@@ -129,7 +127,7 @@ sections.forEach(section => {
 // nhưng việc gọi lại hàm kiểm tra thủ công đảm bảo đúng trạng thái ban đầu, đặc biệt là cho link Home.
 const initialCheck = () => {
     const scrollY = window.pageYOffset;
-    const firstSectionTop = sections[0] ? sections[0].offsetTop - navbarHeight : 0;
+    const firstSectionTop = sections[0] ? sections[0].offsetTop : 0;
 
     // Nếu đang ở rất gần đỉnh trang, active link Home
     if (scrollY <= firstSectionTop + 50) {
